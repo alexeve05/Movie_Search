@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Project 2: Movie Theater</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" type="image/webp" href="images/star_icon.webp" />
+  </head>
+  <body>
+    <div class="header"><h1 class="title">Movie Rental</h1></div>
+    <div class="controls">
+      <div class="dropdown">
+        <select id="genre-select">
+          <option value="" disabled selected>Select Genre</option>
+          <option value="action">Action</option>
+          <option value="adventure">Adventure</option>
+          <option value="animation">Animation</option>
+          <option value="comedy">Comedy</option>
+          <option value="crime">Crime</option>
+          <option value="documentary">Documentary</option>
+          <option value="drama">Drama</option>
+          <option value="family">Family</option>
+          <option value="fantasy">Fantasy</option>
+          <option value="history">History</option>
+          <option value="horror">Horror</option>
+          <option value="music">Music</option>
+          <option value="mystery">Mystery</option>
+          <option value="romance">Romance</option>
+          <option value="sci-fi">Sci-Fi</option>
+          <option value="tv-movie">Tv Movie</option>
+          <option value="thriller">Thriller</option>
+          <option value="war">War</option>
+          <option value="western">Western</option>
+        </select>
+      </div>
+      <form id="search-form" class="search">
+        <input
+          type="text"
+          id="search-input"
+          placeholder="Search for a movie..."
+        />
+        <button type="submit" id="search-button">Search</button>
+      </form>
+    </div>
+    <div class="movie-posters" id="movie-container">
+      <!--api movie poster insert-->
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
